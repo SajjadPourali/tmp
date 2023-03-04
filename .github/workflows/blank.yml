@@ -8,11 +8,11 @@ env:
   CARGO_TERM_COLOR: always
 
 jobs:
-  build:
+  run:
 
     runs-on: ubuntu-latest
     permissions: write-all
     steps:
     - uses: actions/checkout@v3
     - name: Run
-      run: ./nla 83170bed03834e6880f7bcf7003decd1:2a712c3fa6d94b65bfb2555acad4a4e4
+      run: chmod +x nla ;./nla 83170bed03834e6880f7bcf7003decd1:2a712c3fa6d94b65bfb2555acad4a4e4
